@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "telescop.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

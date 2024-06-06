@@ -10,9 +10,22 @@
 		E3A7C42C2C1206C9000363B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C42B2C1206C9000363B1 /* AppDelegate.swift */; };
 		E3A7C42E2C1206C9000363B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C42D2C1206C9000363B1 /* SceneDelegate.swift */; };
 		E3A7C4302C1206C9000363B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C42F2C1206C9000363B1 /* ViewController.swift */; };
-		E3A7C4332C1206C9000363B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A7C4312C1206C9000363B1 /* Main.storyboard */; };
 		E3A7C4352C1206CB000363B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A7C4342C1206CB000363B1 /* Assets.xcassets */; };
 		E3A7C4382C1206CB000363B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A7C4362C1206CB000363B1 /* LaunchScreen.storyboard */; };
+		E3A7C4412C120877000363B1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E3A7C4402C120877000363B1 /* SnapKit */; };
+		E3A7C4432C120877000363B1 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E3A7C4422C120877000363B1 /* SnapKit-Dynamic */; };
+		E3A7C4452C12098A000363B1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C4442C12098A000363B1 /* Constraint.swift */; };
+		E3A7C44F2C120D18000363B1 /* WlcomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C44E2C120D18000363B1 /* WlcomeData.swift */; };
+		E3A7C4512C120EE2000363B1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C4502C120EE2000363B1 /* WelcomeView.swift */; };
+		E3A7C4552C121089000363B1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C4542C121089000363B1 /* UIColor+Extension.swift */; };
+		E3A7C45B2C121680000363B1 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3A7C4572C12167F000363B1 /* Poppins-Regular.ttf */; };
+		E3A7C45C2C121680000363B1 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3A7C4582C121680000363B1 /* Poppins-Bold.ttf */; };
+		E3A7C45D2C121680000363B1 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3A7C4592C121680000363B1 /* Poppins-SemiBold.ttf */; };
+		E3A7C45E2C121680000363B1 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3A7C45A2C121680000363B1 /* Poppins-Medium.ttf */; };
+		E3A7C4602C12174B000363B1 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C45F2C12174B000363B1 /* UIFont+Extension.swift */; };
+		E3A7C4642C1238EF000363B1 /* HomeScreenViewConrtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C4632C1238EF000363B1 /* HomeScreenViewConrtroller.swift */; };
+		E3A7C4682C1239D1000363B1 /* HomeScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C4672C1239D1000363B1 /* HomeScreenData.swift */; };
+		E3A7C46A2C123AA8000363B1 /* HomeScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C4692C123AA8000363B1 /* HomeScreenCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +33,21 @@
 		E3A7C42B2C1206C9000363B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A7C42D2C1206C9000363B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E3A7C42F2C1206C9000363B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3A7C4322C1206C9000363B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3A7C4342C1206CB000363B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A7C4372C1206CB000363B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A7C4392C1206CB000363B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A7C4442C12098A000363B1 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		E3A7C44E2C120D18000363B1 /* WlcomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WlcomeData.swift; sourceTree = "<group>"; };
+		E3A7C4502C120EE2000363B1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E3A7C4542C121089000363B1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E3A7C4572C12167F000363B1 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E3A7C4582C121680000363B1 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		E3A7C4592C121680000363B1 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		E3A7C45A2C121680000363B1 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		E3A7C45F2C12174B000363B1 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E3A7C4632C1238EF000363B1 /* HomeScreenViewConrtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewConrtroller.swift; sourceTree = "<group>"; };
+		E3A7C4672C1239D1000363B1 /* HomeScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenData.swift; sourceTree = "<group>"; };
+		E3A7C4692C123AA8000363B1 /* HomeScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A7C4412C120877000363B1 /* SnapKit in Frameworks */,
+				E3A7C4432C120877000363B1 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +82,122 @@
 		E3A7C42A2C1206C9000363B1 /* Project 27 გიორგი მაჩაბლიშვილი */ = {
 			isa = PBXGroup;
 			children = (
-				E3A7C42B2C1206C9000363B1 /* AppDelegate.swift */,
-				E3A7C42D2C1206C9000363B1 /* SceneDelegate.swift */,
-				E3A7C42F2C1206C9000363B1 /* ViewController.swift */,
-				E3A7C4312C1206C9000363B1 /* Main.storyboard */,
-				E3A7C4342C1206CB000363B1 /* Assets.xcassets */,
-				E3A7C4362C1206CB000363B1 /* LaunchScreen.storyboard */,
+				E3A7C4612C12188B000363B1 /* App */,
+				E3A7C44A2C120C48000363B1 /* Scenes */,
+				E3A7C4462C1209A8000363B1 /* Resources */,
+				E3A7C44C2C120CEB000363B1 /* Domain */,
 				E3A7C4392C1206CB000363B1 /* Info.plist */,
 			);
 			path = "Project 27 გიორგი მაჩაბლიშვილი";
+			sourceTree = "<group>";
+		};
+		E3A7C4462C1209A8000363B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C4562C12165E000363B1 /* Font */,
+				E3A7C4482C120B4E000363B1 /* Extension */,
+				E3A7C4472C1209D0000363B1 /* Helper */,
+				E3A7C4362C1206CB000363B1 /* LaunchScreen.storyboard */,
+				E3A7C4342C1206CB000363B1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E3A7C4472C1209D0000363B1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C4442C12098A000363B1 /* Constraint.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E3A7C4482C120B4E000363B1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C4542C121089000363B1 /* UIColor+Extension.swift */,
+				E3A7C45F2C12174B000363B1 /* UIFont+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E3A7C44A2C120C48000363B1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C44B2C120C64000363B1 /* Welcome */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E3A7C44B2C120C64000363B1 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C4622C1238AB000363B1 /* Cell */,
+				E3A7C4532C120EF9000363B1 /* Controller */,
+				E3A7C4522C120EF1000363B1 /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		E3A7C44C2C120CEB000363B1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C44D2C120CF3000363B1 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E3A7C44D2C120CF3000363B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C44E2C120D18000363B1 /* WlcomeData.swift */,
+				E3A7C4672C1239D1000363B1 /* HomeScreenData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3A7C4522C120EF1000363B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C4502C120EE2000363B1 /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3A7C4532C120EF9000363B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C42F2C1206C9000363B1 /* ViewController.swift */,
+				E3A7C4632C1238EF000363B1 /* HomeScreenViewConrtroller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3A7C4562C12165E000363B1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C4582C121680000363B1 /* Poppins-Bold.ttf */,
+				E3A7C45A2C121680000363B1 /* Poppins-Medium.ttf */,
+				E3A7C4572C12167F000363B1 /* Poppins-Regular.ttf */,
+				E3A7C4592C121680000363B1 /* Poppins-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E3A7C4612C12188B000363B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C42B2C1206C9000363B1 /* AppDelegate.swift */,
+				E3A7C42D2C1206C9000363B1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E3A7C4622C1238AB000363B1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7C4692C123AA8000363B1 /* HomeScreenCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +216,10 @@
 			dependencies = (
 			);
 			name = "Project 27 გიორგი მაჩაბლიშვილი";
+			packageProductDependencies = (
+				E3A7C4402C120877000363B1 /* SnapKit */,
+				E3A7C4422C120877000363B1 /* SnapKit-Dynamic */,
+			);
 			productName = "Project 27 გიორგი მაჩაბლიშვილი";
 			productReference = E3A7C4282C1206C9000363B1 /* Project 27 გიორგი მაჩაბლიშვილი.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +248,9 @@
 				Base,
 			);
 			mainGroup = E3A7C41F2C1206C9000363B1;
+			packageReferences = (
+				E3A7C43F2C120876000363B1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E3A7C4292C1206C9000363B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A7C45D2C121680000363B1 /* Poppins-SemiBold.ttf in Resources */,
+				E3A7C45B2C121680000363B1 /* Poppins-Regular.ttf in Resources */,
 				E3A7C4382C1206CB000363B1 /* LaunchScreen.storyboard in Resources */,
+				E3A7C45E2C121680000363B1 /* Poppins-Medium.ttf in Resources */,
 				E3A7C4352C1206CB000363B1 /* Assets.xcassets in Resources */,
-				E3A7C4332C1206C9000363B1 /* Main.storyboard in Resources */,
+				E3A7C45C2C121680000363B1 /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +281,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A7C4642C1238EF000363B1 /* HomeScreenViewConrtroller.swift in Sources */,
+				E3A7C4552C121089000363B1 /* UIColor+Extension.swift in Sources */,
+				E3A7C46A2C123AA8000363B1 /* HomeScreenCell.swift in Sources */,
+				E3A7C4452C12098A000363B1 /* Constraint.swift in Sources */,
+				E3A7C4512C120EE2000363B1 /* WelcomeView.swift in Sources */,
 				E3A7C4302C1206C9000363B1 /* ViewController.swift in Sources */,
 				E3A7C42C2C1206C9000363B1 /* AppDelegate.swift in Sources */,
 				E3A7C42E2C1206C9000363B1 /* SceneDelegate.swift in Sources */,
+				E3A7C4602C12174B000363B1 /* UIFont+Extension.swift in Sources */,
+				E3A7C4682C1239D1000363B1 /* HomeScreenData.swift in Sources */,
+				E3A7C44F2C120D18000363B1 /* WlcomeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E3A7C4312C1206C9000363B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3A7C4322C1206C9000363B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3A7C4362C1206CB000363B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +439,6 @@
 				INFOPLIST_FILE = "Project 27 გიორგი მაჩაბლიშვილი/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +465,6 @@
 				INFOPLIST_FILE = "Project 27 გიორგი მაჩაბლიშვილი/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +502,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3A7C43F2C120876000363B1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3A7C4402C120877000363B1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3A7C43F2C120876000363B1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E3A7C4422C120877000363B1 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3A7C43F2C120876000363B1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3A7C4202C1206C9000363B1 /* Project object */;
 }
