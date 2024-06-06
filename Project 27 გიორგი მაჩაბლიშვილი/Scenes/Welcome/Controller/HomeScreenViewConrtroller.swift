@@ -19,7 +19,6 @@ class HomeScreenViewConrtroller: UIViewController {
     private lazy var goButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.backgroundColor = UIColor(hexString: "FFFFFF")
-//        button.setTitle("Stone Stellar", for: .normal)
         button.titleLabel?.font = UIFont.poppinsRegular(size: 15)
         button.tintColor = UIColor(hexString: "030303")
         return button
@@ -50,7 +49,7 @@ class HomeScreenViewConrtroller: UIViewController {
             mianImage: UIImage(named: "girl and boy")!,
             button: UIImage(named: "Forward Arrow")!),
         HomeScreenData.init(
-            title: "Discover  Combats",
+            title: "Discover Combats",
             infoLabel: "Find out what’s new and compete among players with new challenges and earn cash with game points ",
             mianImage: UIImage(named: "telescop")!,
             button: UIImage(named: "Forward Arrow")!),
@@ -65,16 +64,18 @@ class HomeScreenViewConrtroller: UIViewController {
         super.viewDidLoad()
         
         collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        collectionView.register(HomeScreenCell.self, forCellWithReuseIdentifier: HomeScreenCell.identifier)
         
         setup()
         setupConstraints()
-        
-        
     }
     
     func setup() {
         view.addSubview(topImage)
         view.addSubview(goButton)
+        view.addSubview(collectionView)
     }
     
     func setupConstraints() {
@@ -91,10 +92,16 @@ class HomeScreenViewConrtroller: UIViewController {
             make.height.equalTo(15 * Constraint.yCoeff)
             make.width.equalTo(59 * Constraint.xCoeff)
         }
+        
+        collectionView.snp.remakeConstraints { make in
+            make.top.equalTo(goButton.snp.bottom).offset(39 * Constraint.yCoeff)
+            make.leading.trailing.equalToSuperview().inset(30 * Constraint.xCoeff)
+            make.bottom.equalTo(view.snp.bottom).offset(-30 * Constraint.yCoeff)
+        }
     }
 }
 
-extension HomeScreenViewConrtroller: UICollectionViewDataSource {
+extension HomeScreenViewConrtroller: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cellInfo.count
     }
@@ -106,5 +113,11 @@ extension HomeScreenViewConrtroller: UICollectionViewDataSource {
         let info = cellInfo[indexPath.item]
         cell.configuration(with: info)
         return cell
-    } 
+    }
+}
+
+extension HomeScreenViewConrtroller: UICollectionViewDelegateFlowLayout {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return cellInfo.count
+    }
 }

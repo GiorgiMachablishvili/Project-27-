@@ -12,7 +12,7 @@ class HomeScreenCell: UICollectionViewCell {
     
     static let identifier = "HomeScreenCell"
     
-    private lazy var titleLabe: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor(hexString: "FFFFFF")
         label.font = UIFont.poppinsSemiBold(size: 12)
@@ -44,6 +44,8 @@ class HomeScreenCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super .init(frame: frame)
+        setup()
+        setupConstraint()
     }
     
     required init?(coder: NSCoder) {
@@ -51,21 +53,21 @@ class HomeScreenCell: UICollectionViewCell {
     }
     
     func setup() {
-        contentView.addSubview(titleLabe)
+        contentView.addSubview(titleLabel)
         contentView.addSubview(informationLabel)
         contentView.addSubview(imageView)
         contentView.addSubview(backButton)
     }
     
     func setupConstraint() {
-        titleLabe.snp.remakeConstraints { make in
+        titleLabel.snp.remakeConstraints { make in
             make.top.equalTo(contentView.snp.top).offset(30 * Constraint.yCoeff)
             make.leading.equalTo(contentView.snp.leading).offset(24 * Constraint.xCoeff)
             make.height.equalTo(18 * Constraint.yCoeff)
         }
         
         informationLabel.snp.remakeConstraints { make in
-            make.top.equalTo(titleLabe.snp.bottom).offset(10 * Constraint.yCoeff)
+            make.top.equalTo(titleLabel.snp.bottom).offset(10 * Constraint.yCoeff)
             make.leading.equalTo(contentView.snp.leading).offset(24 * Constraint.xCoeff)
             make.height.equalTo(45 * Constraint.yCoeff)
             make.width.equalTo(165 * Constraint.xCoeff)
@@ -86,7 +88,7 @@ class HomeScreenCell: UICollectionViewCell {
         }
     }
     func configuration(with data: HomeScreenData) {
-        titleLabe.text = data.title
+        titleLabel.text = data.title
         informationLabel.text = data.infoLabel
         imageView.image = data.mianImage
         backButton.setImage(UIImage(named: "Forward Arrow"), for: .normal)

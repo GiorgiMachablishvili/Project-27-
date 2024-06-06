@@ -10,8 +10,6 @@ import UIKit
 struct HomeScreenData {
     let title: String
     let infoLabel: String
-//    let cloudImage: UIImage
-//    let pointImage: UIImage
     let mianImage: UIImage
     let button: UIImage
     

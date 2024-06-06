@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         welcomeView.configuration(with: data)
         welcomeView.didTapButton = {
             let homeVC = HomeScreenViewConrtroller()
-            self.navigationController?.present(homeVC, animated: true)
+            self.navigationController?.pushViewController(homeVC, animated: true)
         }
         self.view = welcomeView
     }
