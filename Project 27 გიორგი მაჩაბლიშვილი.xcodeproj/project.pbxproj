@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E351E2892C12DA4600D0C91C /* Home Extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351E2882C12DA4600D0C91C /* Home Extansion.swift */; };
-		E351E28B2C12DD2300D0C91C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351E28A2C12DD2300D0C91C /* UserView.swift */; };
 		E351E28D2C12DD4200D0C91C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351E28C2C12DD4200D0C91C /* UserViewController.swift */; };
 		E351E28F2C12DD6100D0C91C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351E28E2C12DD6100D0C91C /* UserData.swift */; };
+		E351E2912C13165400D0C91C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351E2902C13165400D0C91C /* UserCell.swift */; };
+		E351E2932C13360B00D0C91C /* UserExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351E2922C13360B00D0C91C /* UserExtension.swift */; };
 		E3A7C42C2C1206C9000363B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C42B2C1206C9000363B1 /* AppDelegate.swift */; };
 		E3A7C42E2C1206C9000363B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C42D2C1206C9000363B1 /* SceneDelegate.swift */; };
 		E3A7C4302C1206C9000363B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7C42F2C1206C9000363B1 /* ViewController.swift */; };
@@ -34,9 +35,10 @@
 
 /* Begin PBXFileReference section */
 		E351E2882C12DA4600D0C91C /* Home Extansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Extansion.swift"; sourceTree = "<group>"; };
-		E351E28A2C12DD2300D0C91C /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		E351E28C2C12DD4200D0C91C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E351E28E2C12DD6100D0C91C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E351E2902C13165400D0C91C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E351E2922C13360B00D0C91C /* UserExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserExtension.swift; sourceTree = "<group>"; };
 		E3A7C4282C1206C9000363B1 /* Project 27 გიორგი მაჩაბლიშვილი.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 27 გიორგი მაჩაბლიშვილი.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A7C42B2C1206C9000363B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A7C42D2C1206C9000363B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				E3A7C4542C121089000363B1 /* UIColor+Extension.swift */,
 				E3A7C45F2C12174B000363B1 /* UIFont+Extension.swift */,
 				E351E2882C12DA4600D0C91C /* Home Extansion.swift */,
+				E351E2922C13360B00D0C91C /* UserExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -169,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				E3A7C4502C120EE2000363B1 /* WelcomeView.swift */,
-				E351E28A2C12DD2300D0C91C /* UserView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				E3A7C4692C123AA8000363B1 /* HomeScreenCell.swift */,
+				E351E2902C13165400D0C91C /* UserCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -301,11 +304,12 @@
 				E3A7C4512C120EE2000363B1 /* WelcomeView.swift in Sources */,
 				E351E2892C12DA4600D0C91C /* Home Extansion.swift in Sources */,
 				E3A7C4302C1206C9000363B1 /* ViewController.swift in Sources */,
+				E351E2912C13165400D0C91C /* UserCell.swift in Sources */,
 				E351E28D2C12DD4200D0C91C /* UserViewController.swift in Sources */,
+				E351E2932C13360B00D0C91C /* UserExtension.swift in Sources */,
 				E3A7C42C2C1206C9000363B1 /* AppDelegate.swift in Sources */,
 				E3A7C42E2C1206C9000363B1 /* SceneDelegate.swift in Sources */,
 				E3A7C4602C12174B000363B1 /* UIFont+Extension.swift in Sources */,
-				E351E28B2C12DD2300D0C91C /* UserView.swift in Sources */,
 				E3A7C4682C1239D1000363B1 /* HomeScreenData.swift in Sources */,
 				E3A7C44F2C120D18000363B1 /* WlcomeData.swift in Sources */,
 			);
