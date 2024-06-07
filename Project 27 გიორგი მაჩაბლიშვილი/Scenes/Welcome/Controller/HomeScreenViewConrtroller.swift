@@ -63,7 +63,8 @@ class HomeScreenViewConrtroller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(hexString: "FFFFFF")
+//        backgroundColor = UIColor(hexString: "FFFFFF")
+
         collectionView.dataSource = self
         collectionView.delegate = self
         
