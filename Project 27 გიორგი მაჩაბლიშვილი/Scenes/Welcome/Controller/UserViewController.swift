@@ -36,9 +36,10 @@ class UserViewController: UIViewController {
         
         let userView = UserView()
         userView.configuration(with: data)
+        userView.didTapButton = {
+            self.navigationController?.popViewController(animated: true)
+        }
         self.view = userView
 
     }
-
-
 }
