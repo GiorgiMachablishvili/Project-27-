@@ -48,7 +48,7 @@ class HomeScreenCell: UICollectionViewCell {
         setupConstraint()
         
         layer.cornerRadius = 10
-        backgroundColor = UIColor(hexString: "FF6480")
+        backgroundColor = UIColor(hexString: "F22E63")
     }
     
     required init?(coder: NSCoder) {
@@ -96,6 +96,7 @@ class HomeScreenCell: UICollectionViewCell {
         informationLabel.text = data.infoLabel
         imageView.image = data.mianImage
         backButton.setImage(UIImage(named: "Forward Arrow"), for: .normal)
+
     }
 }
 

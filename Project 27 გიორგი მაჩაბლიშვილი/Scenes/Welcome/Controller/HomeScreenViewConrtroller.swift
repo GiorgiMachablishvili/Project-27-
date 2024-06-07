@@ -43,23 +43,19 @@ class HomeScreenViewConrtroller: UIViewController {
         HomeScreenData.init(
             title: "Schedule",
             infoLabel: "Easily schedule event/games then find like minded players for battle. You up for it?",
-            mianImage: UIImage(named: "woman&clock")!,
-            button: UIImage(named: "Forward Arrow")!),
+            mianImage: UIImage(named: "woman&clock")!, button: UIImage(named: "Forward Arrow")!),
         HomeScreenData.init(
             title: "Statistics",
             infoLabel: "All data from previous and upcoming games can be found here ",
-            mianImage: UIImage(named: "girl and boy")!,
-            button: UIImage(named: "Forward Arrow")!),
+            mianImage: UIImage(named: "girl and boy")!, button: UIImage(named: "Forward Arrow")!),
         HomeScreenData.init(
             title: "Discover Combats",
             infoLabel: "Find out what’s new and compete among players with new challenges and earn cash with game points ",
-            mianImage: UIImage(named: "telescop")!,
-            button: UIImage(named: "Forward Arrow")!),
+            mianImage: UIImage(named: "telescop")!, button: UIImage(named: "Forward Arrow")!),
         HomeScreenData.init(
             title: "Message Players",
             infoLabel: "Found the profile of a player that interests you? Start a conversation ",
-            mianImage: UIImage(named: "boy nad girl")!,
-            button: UIImage(named: "Forward Arrow")!)
+            mianImage: UIImage(named: "boy nad girl")!, button: UIImage(named: "Forward Arrow")!)
     ]
     
     override func viewDidLoad() {
