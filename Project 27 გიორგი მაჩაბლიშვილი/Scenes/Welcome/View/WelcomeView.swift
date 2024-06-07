@@ -15,7 +15,6 @@ class WelcomeView: UIView {
     private lazy var gameTimeButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.backgroundColor = UIColor(hexString: "FF6480")
-//        button.setImage(UIImage(named: "gameIcon"), for: .normal)
         button.tintColor = UIColor(hexString: "030303")
         button.addTarget(self, action: #selector(selectButton), for: .touchUpInside)
         return button

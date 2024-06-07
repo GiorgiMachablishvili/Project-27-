@@ -23,6 +23,7 @@ class HomeScreenViewConrtroller: UIViewController {
         button.titleLabel?.font = UIFont.poppinsRegular(size: 10)
         button.setTitle("Stone Stellar", for: .normal)
         button.setTitleColor(UIColor(hexString: "030303"), for: .normal)
+        button.addTarget(self, action: #selector(goUserPage), for: .touchUpInside)
         return button
     }()
     
@@ -63,7 +64,7 @@ class HomeScreenViewConrtroller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        backgroundColor = UIColor(hexString: "FFFFFF")
+        view.backgroundColor = UIColor(hexString: "FFFFFF")
 
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -100,6 +101,11 @@ class HomeScreenViewConrtroller: UIViewController {
             make.leading.trailing.equalToSuperview().inset(30 * Constraint.xCoeff)
             make.bottom.equalTo(view.snp.bottom).offset(-30 * Constraint.yCoeff)
         }
+    }
+    
+    @objc func goUserPage() {
+        let userVC = UserViewController()
+        navigationController?.pushViewController(userVC, animated: true)
     }
 }
 

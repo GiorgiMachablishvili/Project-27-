@@ -16,7 +16,7 @@ class HomeScreenCell: UICollectionViewCell {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor(hexString: "FFFFFF")
         label.font = UIFont.poppinsSemiBold(size: 12)
-        label.textAlignment = .right
+        label.textAlignment = .left
         label.numberOfLines = 1
         return label
     }()
@@ -25,7 +25,7 @@ class HomeScreenCell: UICollectionViewCell {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor(hexString: "FFFFFF")
         label.font = UIFont.poppinsRegular(size: 10)
-        label.textAlignment = .right
+        label.textAlignment = .left
         label.numberOfLines = 0
         return label
     }()
