@@ -12,6 +12,7 @@ class HomeScreenViewConrtroller: UIViewController {
     
     private lazy var topImage: UIImageView = {
         let topImage = UIImageView(frame: .zero)
+        topImage.image = UIImage(named: "avatar")
         topImage.contentMode = .scaleAspectFill
         return topImage
     }()
@@ -19,16 +20,16 @@ class HomeScreenViewConrtroller: UIViewController {
     private lazy var goButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.backgroundColor = UIColor(hexString: "FFFFFF")
-        button.titleLabel?.font = UIFont.poppinsRegular(size: 15)
-        button.tintColor = UIColor(hexString: "030303")
+        button.titleLabel?.font = UIFont.poppinsRegular(size: 10)
+        button.setTitle("Stone Stellar", for: .normal)
+        button.setTitleColor(UIColor(hexString: "030303"), for: .normal)
         return button
     }()
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        layout.minimumLineSpacing = 20
+        layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 10
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.showsVerticalScrollIndicator = false
@@ -56,18 +57,18 @@ class HomeScreenViewConrtroller: UIViewController {
         HomeScreenData.init(
             title: "Message Players",
             infoLabel: "Found the profile of a player that interests you? Start a conversation ",
-            mianImage: UIImage(named: "girl and boy")!,
+            mianImage: UIImage(named: "boy nad girl")!,
             button: UIImage(named: "Forward Arrow")!)
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(hexString: "FFFFFF")
         collectionView.dataSource = self
         collectionView.delegate = self
         
         collectionView.register(HomeScreenCell.self, forCellWithReuseIdentifier: HomeScreenCell.identifier)
-        
+        self.navigationController?.isNavigationBarHidden  = true
         setup()
         setupConstraints()
     }
@@ -90,7 +91,7 @@ class HomeScreenViewConrtroller: UIViewController {
             make.top.equalTo(view.snp.top).offset(62 * Constraint.yCoeff)
             make.leading.equalTo(topImage.snp.trailing).offset(2 * Constraint.xCoeff)
             make.height.equalTo(15 * Constraint.yCoeff)
-            make.width.equalTo(59 * Constraint.xCoeff)
+            make.width.equalTo(60 * Constraint.xCoeff)
         }
         
         collectionView.snp.remakeConstraints { make in
@@ -101,23 +102,3 @@ class HomeScreenViewConrtroller: UIViewController {
     }
 }
 
-extension HomeScreenViewConrtroller: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellInfo.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeScreenCell.identifier, for: indexPath) as? HomeScreenCell else {
-            return UICollectionViewCell()
-        }
-        let info = cellInfo[indexPath.item]
-        cell.configuration(with: info)
-        return cell
-    }
-}
-
-extension HomeScreenViewConrtroller: UICollectionViewDelegateFlowLayout {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return cellInfo.count
-    }
-}
