@@ -37,7 +37,7 @@ class HomeScreenCell: UICollectionViewCell {
     
     private lazy var backButton: UIButton = {
         let button = UIButton(frame: .zero)
-        button.backgroundColor = UIColor(hexString: "FF6480")
+        button.backgroundColor = UIColor(hexString: "F22E63")
         button.tintColor = UIColor(hexString: "FFFFFF")
         return button
     }()
