@@ -46,6 +46,9 @@ class HomeScreenCell: UICollectionViewCell {
         super .init(frame: frame)
         setup()
         setupConstraint()
+        
+        layer.cornerRadius = 10
+        backgroundColor = UIColor(hexString: "FF6480")
     }
     
     required init?(coder: NSCoder) {
@@ -81,18 +84,18 @@ class HomeScreenCell: UICollectionViewCell {
         }
         
         backButton.snp.remakeConstraints { make in
-            make.bottom.equalTo(contentView.snp.bottom).offset(23.67 * Constraint.yCoeff)
+            make.bottom.equalTo(contentView.snp.bottom).offset(-(23.67 * Constraint.yCoeff))
             make.leading.equalTo(contentView.snp.leading).offset(24 * Constraint.xCoeff)
             make.height.equalTo(9.33 * Constraint.yCoeff)
             make.width.equalTo(14 * Constraint.xCoeff)
         }
     }
+    
     func configuration(with data: HomeScreenData) {
         titleLabel.text = data.title
         informationLabel.text = data.infoLabel
         imageView.image = data.mianImage
         backButton.setImage(UIImage(named: "Forward Arrow"), for: .normal)
     }
-
 }
 
